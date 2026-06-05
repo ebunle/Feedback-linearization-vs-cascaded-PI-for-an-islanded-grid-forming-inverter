@@ -47,10 +47,10 @@ which is not produced by the simulation scripts.
 ### MATLAB
 
 Requires R2020a or later (uses `exportgraphics`). Place
-`ME944_simulation.m` in your working directory and run
+`MATLAB_simulation.m` in your working directory and run
 
 ```matlab
-ME944_simulation
+Python_simulation
 ```
 
 The script prints quantitative metrics to the command window and writes
@@ -66,33 +66,6 @@ python ME944_simulation.py
 
 Same output files, same metrics printed to stdout. The Python and MATLAB
 versions produce numerically identical results.
-
-
-## Plant parameters
-
-All plant parameters and PI controller gains are taken from Guzman et al.
-(2025), Table 1:
-
-| Parameter | Value |
-| --- | --- |
-| Filter inductance $L_f$ | 0.079 mH |
-| Filter resistance $R_f$ | 0.76 mΩ |
-| Filter capacitance $C_f$ | 13.7 mF |
-| Commanded frequency $\omega^*$ | $2\pi \times 60$ rad/s |
-| Reference voltage $v_d^*$ | 359 V peak (= 440 V RMS line-to-line) |
-| Inner PI gains $(k_{pi},\, k_{ii})$ | (0.6176, 2419.9) |
-| Outer PI gains $(k_{pv},\, k_{iv})$ | (10.72, 4195) |
-
-The resistive load $R_{\mathrm{load}} = 9.67$ mΩ is sized to absorb the
-full inverter rating of 20 MW at the nominal voltage. The original work
-of Guzman et al. (2025) uses an RL load through a 23/0.44 kV transformer;
-the resistive simplification is the scope of the present paper and is
-documented in Section 4.
-
-The feedback-linearizing controller places its closed-loop poles at
-$\omega_n = 2\pi \times 500$ rad/s with damping $\zeta = 0.707$, giving
-$k_0 = 9.87 \times 10^6$ and $k_1 = 4444$ from equation (28) of the paper.
-
 
 ## Reproducing the paper figures
 
