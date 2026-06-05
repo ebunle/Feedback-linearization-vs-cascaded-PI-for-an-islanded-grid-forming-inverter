@@ -101,7 +101,7 @@ Please cite the code as:
 }
 ```
 
-Plain-text (IEEE style):
+OR:
 
 > R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
 > Islanded Grid-Forming Inverter -- MATLAB/PYTHON Simulation," Zenodo, 2026,
