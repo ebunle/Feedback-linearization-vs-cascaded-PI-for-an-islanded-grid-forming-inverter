@@ -38,9 +38,6 @@ standard dq power relations.
 | 2, load step rejection | load resistance halves, 9.67 → 4.84 mΩ | Figure 3 |
 | 3, parameter mistune | FL controller's belief of $R_f$ steps 0.76 → 1.14 mΩ | Figure 4 |
 
-Note: Figure 1 in the paper is the model and control structure diagram,
-which is not produced by the simulation scripts.
-
 
 ## Running
 
@@ -53,9 +50,6 @@ Requires R2020a or later (uses `exportgraphics`). Place
 Python_simulation
 ```
 
-The script prints quantitative metrics to the command window and writes
-six output files: `fig_scenarioN_*.{png,pdf}` for N = 1, 2, 3.
-
 ### Python
 
 Requires Python 3.8 or later with `numpy` and `matplotlib`. From a shell:
@@ -64,15 +58,9 @@ Requires Python 3.8 or later with `numpy` and `matplotlib`. From a shell:
 python ME944_simulation.py
 ```
 
-Same output files, same metrics printed to stdout. The Python and MATLAB
-versions produce numerically identical results.
-
 ## Reproducing the paper figures
 
-Running either script regenerates Figures 2, 3, and 4 used in Section 5
-of the paper exactly. The figures and their interpretation are discussed
-in Sections 5.1, 5.2, and 5.3 respectively.
-
+Running either script regenerates figures and their interpretation are discussed.
 
 ## Numerical method
 
