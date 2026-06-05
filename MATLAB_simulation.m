@@ -1,15 +1,12 @@
-
 % Full-state feedback linearization vs cascaded PI for an islanded
 % grid-forming inverter with resistive load.
 %
-% Plant parameters and PI gains: Guzman, Madrigal, Melgoza-Vazquez (2025),
-% Table 1.  A balanced resistive load is sized to draw the 20 MW rating
-% at the 440 V RMS line-line operating point.
+% Guzman, Madrigal, Melgoza-Vazquez (2025), Table 1
 %
-% Three scenarios, each on its own figure showing v_dq, i_dq, P, Q:
-%   (1) Reference tracking:  v_d* steps 359 -> 320 V at t = 5 ms
-%   (2) Load step rejection: R_load 9.67 -> 4.84 mohm at t = 5 ms
-%   (3) Parameter mistune:   FL belief of R_f 0.76 -> 1.14 mohm at t = 5 ms
+% Scenarios:
+% (1) Reference tracking:  vd* 359 -> 320 V at t = 5 ms
+% (2) Load step:           Rload 9.67 -> 4.84 mOhm at t = 5 ms
+% (3) Parameter mistune:  Rf (FL belief) 0.76 -> 1.14 mOhm
 
 clear; clc; close all;
 
@@ -172,19 +169,19 @@ Q_PI = -1.5*(x_PI(3,:).*igq_PI - x_PI(4,:).*igd_PI);
 figure('Position',[100 100 1100 850], 'Color','w');
 tms = t*1e3;
 
-subplot(3,2,1); plot(tms,x_FL(3,:),'LineWidth',1.6); hold on; plot(tms,x_PI(3,:),'LineWidth',1.6);
+subplot(3,2,1); plot(tms,x_FL(3,:),'LineWidth',1.6); hold on; plot(tms,x_PI(3,:), '--','LineWidth',1.6);
 xline(5,'k--'); ylabel('v_d (V)'); grid on; legend('FL','PI','Location','best'); title('d-axis voltage')
-subplot(3,2,2); plot(tms,x_FL(4,:),'LineWidth',1.6); hold on; plot(tms,x_PI(4,:),'LineWidth',1.6);
+subplot(3,2,2); plot(tms,x_FL(4,:),'LineWidth',1.6); hold on; plot(tms,x_PI(4,:),'--','LineWidth',1.6);
 xline(5,'k--'); ylabel('v_q (V)'); grid on; legend('FL','PI','Location','best'); title('q-axis voltage')
-subplot(3,2,3); plot(tms,x_FL(1,:),'LineWidth',1.6); hold on; plot(tms,x_PI(1,:),'LineWidth',1.6);
+subplot(3,2,3); plot(tms,x_FL(1,:),'LineWidth',1.6); hold on; plot(tms,x_PI(1,:),'--','LineWidth',1.6);
 xline(5,'k--'); ylabel('i_d (A)'); grid on; legend('FL','PI','Location','best'); title('d-axis current')
-subplot(3,2,4); plot(tms,x_FL(2,:),'LineWidth',1.6); hold on; plot(tms,x_PI(2,:),'LineWidth',1.6);
+subplot(3,2,4); plot(tms,x_FL(2,:),'LineWidth',1.6); hold on; plot(tms,x_PI(2,:),'--','LineWidth',1.6);
 xline(5,'k--'); ylabel('i_q (A)'); grid on; legend('FL','PI','Location','best'); title('q-axis current')
-subplot(3,2,5); plot(tms,P_FL/1e6,'LineWidth',1.6); hold on; plot(tms,P_PI/1e6,'LineWidth',1.6);
+subplot(3,2,5); plot(tms,P_FL/1e6,'LineWidth',1.6); hold on; plot(tms,P_PI/1e6,'--','LineWidth',1.6);
 xline(5,'k--'); xlabel('time (ms)'); ylabel('P (MW)'); grid on; legend('FL','PI','Location','best');
 title('active power at load')
-subplot(3,2,6); plot(tms,Q_FL/1e6,'LineWidth',1.6); hold on; plot(tms,Q_PI/1e6,'LineWidth',1.6);
-xline(5,'k--'); xlabel('time (ms)'); ylabel('Q (MVAr)'); grid on; legend('FL','PI','Location','best');
+subplot(3,2,6); plot(tms,Q_FL/1e6,'LineWidth',1.6); hold on; plot(tms,Q_PI/1e6,'--','LineWidth',1.6);
+xline(5,'k--'); xlabel('time (ms)'); ylabel('Q (MVAr)'); grid on; legend('FL','PI','t=5 ms','Location','best');
 title('reactive power at load')
 
 sgtitle(title_str, 'FontSize', 13, 'FontWeight','bold')
