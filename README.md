@@ -1,4 +1,4 @@
-# Feedback Linearization of an Islanded Grid-Forming Inverter
+# Feedback Linearization and Control of a Grid-Forming Power Converter in an Islanded Microgrid
 
 Code and simulation results accompanying the tutorial paper
 *Feedback Linearization and Control of a Grid-Forming Power Converter
