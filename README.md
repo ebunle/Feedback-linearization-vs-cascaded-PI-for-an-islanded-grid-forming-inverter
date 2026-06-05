@@ -13,7 +13,7 @@ and compares it against the cascaded PI baseline.
 
 | File | Description |
 | --- | --- |
-| `FL_microgrid_tutorial.tex`, `.pdf` | Full tutorial paper. |
+| `FL_microgrid_tutorial` | Full tutorial paper. |
 | `MATLAB_simulation.m` | MATLAB simulation of both controllers under three scenarios. |
 | `Python_simulation.py` | Python equivalent script.. |
 | `fig_scenario1_reference` | Figure 2 in the paper: reference tracking response ($v_{dq}$, $i_{dq}$, $P$, $Q$). |
