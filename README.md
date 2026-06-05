@@ -87,7 +87,7 @@ Plain-text (IEEE style):
 ### Citing the code
 
 ```bibtex
-@software{EbunleAkupan2026_MATLAB,
+@software{EbunleAkupan2026_software,
   author    = {Ebunle Akupan, Rene and Thein, May-Win},
   title     = {{Feedback Linearization of an Islanded Grid-Forming
                 Inverter -- MATLAB/PYTHON Simulation}},
