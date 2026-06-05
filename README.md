@@ -86,8 +86,6 @@ Plain-text (IEEE style):
 
 ### Citing the code
 
-Please cite the code as:
-
 ```bibtex
 @software{EbunleAkupan2026_MATLAB,
   author    = {Ebunle Akupan, Rene and Thein, May-Win},
