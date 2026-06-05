@@ -13,9 +13,9 @@ and compares it against the cascaded PI baseline.
 
 | File | Description |
 | --- | --- |
-| `FL_microgrid_tutorial.tex`, `.pdf` | Full tutorial paper with abstract, six sections, and references. |
-| `ME944_simulation.m` | MATLAB simulation of both controllers under three scenarios. |
-| `ME944_simulation.py` | Python equivalent of the MATLAB script. Identical logic and outputs. |
+| `FL_microgrid_tutorial.tex`, `.pdf` | Full tutorial paper. |
+| `MATLAB_simulation.m` | MATLAB simulation of both controllers under three scenarios. |
+| `Python_simulation.py` | Python equivalent script.. |
 | `fig_scenario1_reference.png`, `.pdf` | Figure 2 in the paper: reference tracking response ($v_{dq}$, $i_{dq}$, $P$, $Q$). |
 | `fig_scenario2_load.png`, `.pdf` | Figure 3 in the paper: load step rejection response. |
 | `fig_scenario3_param.png`, `.pdf` | Figure 4 in the paper: parameter mistune response. |
