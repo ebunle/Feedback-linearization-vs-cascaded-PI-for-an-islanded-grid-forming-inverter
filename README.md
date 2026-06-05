@@ -60,26 +60,7 @@ python ME944_simulation.py
 
 ## Reproducing the paper figures
 
-Running either script regenerates figures and their interpretation are discussed.
-
-## Numerical method
-
-The plant is integrated with forward Euler at a fixed step of 1 μs. This
-is small enough relative to the fastest closed-loop time constant
-($1/\omega_n \approx 320$ μs for FL, longer for PI) that integration
-error is well below all reported metrics. For longer simulations or more
-aggressive gains, a Runge-Kutta integrator would be more appropriate.
-
-
-## Initial conditions
-
-Both controllers start from the plant's true steady state at the initial
-operating point. For the PI controller, the four integrator states are
-pre-loaded to the values that hold the operating point so that the
-cascade begins in equilibrium rather than recovering from a cold start.
-The algebraic relations used for this preloading are visible in
-`run_scenario` in both scripts (lines around `xi_id`, `xi_iq`, `xi_vd`,
-`xi_vq`).
+Running either script regenerates the figures.
 
 
 ## Reference
