@@ -20,27 +20,9 @@ and compares it against the cascaded PI baseline.
 | `FL_microgrid_tutorial` | Full tutorial paper. |
 | `MATLAB_simulation.m` | MATLAB simulation of both controllers under three scenarios. |
 | `Python_simulation.py` | Python equivalent script. |
-| `fig_scenario1_reference` | Figure 2 in the paper: reference tracking response ($v_{dq}$, $i_{dq}$, $P$, $Q$). |
-| `fig_scenario2_load` | Figure 3 in the paper: load step rejection response. |
-| `fig_scenario3_param` | Figure 4 in the paper: parameter mistune response. |
-
-
-## What the simulation does
-
-The simulation runs three scenarios on the four-state plant in
-equations (5)--(8) of the paper. In each scenario both controllers
-(FL and cascaded PI) start from the plant's true steady state at
-$v_d^* = 359$ V with a 20 MW resistive load, and a single disturbance
-event occurs at $t = 5$ ms. Each scenario produces one figure showing
-the four plant states $(v_d, v_q, i_d, i_q)$ together with active and
-reactive load power $(P, Q)$ computed from the state through the
-standard dq power relations.
-
-| Scenario | Event at $t = 5$ ms | Paper figure |
-| --- | --- | --- |
-| 1, reference tracking | $d$-axis voltage reference steps 359 → 320 V | Figure 2 |
-| 2, load step rejection | load resistance halves, 9.67 → 4.84 mΩ | Figure 3 |
-| 3, parameter mistune | FL controller's belief of $R_f$ steps 0.76 → 1.14 mΩ | Figure 4 |
+| `fig_scenario1_reference` | Reference tracking response ($v_{dq}$, $i_{dq}$, $P$, $Q$). |
+| `fig_scenario2_load` | Load step rejection response. |
+| `fig_scenario3_param` | Parameter mistune response. |
 
 
 ## Running
@@ -112,7 +94,7 @@ Zenodo record ID after you deposit the code):
 @software{EbunleAkupan2026_MATLAB,
   author    = {Ebunle Akupan, Rene and Thein, May-Win},
   title     = {{Feedback Linearization of an Islanded Grid-Forming
-                Inverter -- MATLAB Simulation}},
+                Inverter -- MATLAB/PYTHON Simulation}},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20559223},
@@ -129,8 +111,3 @@ Plain-text (IEEE style):
 
 ---
 
-## Reference
-
-Guzman, G., Madrigal, M., and Melgoza-Vázquez, E. Grid-forming inverters
-for frequency support in power grids. *Electricity*, vol. 6, no. 4,
-p. 65, 2025.
