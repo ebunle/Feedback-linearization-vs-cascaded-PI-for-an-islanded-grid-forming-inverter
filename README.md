@@ -8,6 +8,15 @@ This package implements a full-state feedback-linearizing controller for the
 four-state islanded grid-forming inverter model in the synchronous dq frame,
 and compares it against the cascaded PI baseline.
 
+**Paper:** [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+<!-- Replace XXXX.XXXXX with your arXiv ID once the submission is processed -->
+
+**MATLAB code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/ME944_simulation.m)
+<!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
+
+**Python code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/ME944_simulation.py)
+<!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
+
 
 ## Contents
 
