@@ -1,21 +1,17 @@
 """
-ME944_simulation.py
+% Full-state feedback linearization vs cascaded PI for an islanded
+% grid-forming inverter with resistive load.
+%
+% Plant parameters and PI gains: Guzman, Madrigal, Melgoza-Vazquez (2025),
+% Table 1.  A balanced resistive load is sized to draw the 20 MW rating
+% at the 440 V RMS line-line operating point.
+%
+% Three scenarios, each on its own figure showing v_dq, i_dq, P, Q:
+%   (1) Reference tracking:  v_d* steps 359 -> 320 V at t = 5 ms
+%   (2) Load step rejection: R_load 9.67 -> 4.84 mohm at t = 5 ms
+%   (3) Parameter mistune:   FL belief of R_f 0.76 -> 1.14 mohm at t = 5 ms
 
-Full-state feedback linearization vs cascaded PI for an islanded
-grid-forming inverter with resistive load.
-
-Python equivalent of ME944_simulation.m.  Same logic, same parameters,
-same outputs.  Plant parameters and PI gains are from Guzman, Madrigal,
-and Melgoza-Vazquez (2025), Table 1.  A balanced resistive load is
-sized to draw the 20 MW rating at the 440 V RMS line-to-line
-operating point.
-
-Three scenarios, each on its own figure showing v_dq, i_dq, P, Q:
-    (1) Reference tracking:  v_d* steps 359 -> 320 V at t = 5 ms
-    (2) Load step rejection: R_load 9.67 -> 4.84 mohm at t = 5 ms
-    (3) Parameter mistune:   FL belief of R_f 0.76 -> 1.14 mohm at t = 5 ms
-
-Requires: numpy, matplotlib.  Run with:  python ME944_simulation.py
+Requires: numpy, matplotlib.
 """
 
 from dataclasses import dataclass
@@ -29,7 +25,7 @@ import matplotlib.pyplot as plt
 
 @dataclass
 class Plant:
-    """Islanded inverter plant parameters (Guzman et al. 2025, Table 1)."""
+    """Islanded inverter plant parameters ."""
     Lf: float = 0.079e-3          # filter inductance (H)
     Cf: float = 13.7e-3           # filter capacitance (F)
     Rf: float = 0.76e-3           # filter resistance (Ohm)
@@ -336,3 +332,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
