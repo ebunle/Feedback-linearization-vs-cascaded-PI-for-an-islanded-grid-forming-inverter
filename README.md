@@ -11,10 +11,10 @@ and compares it against the cascaded PI baseline.
 **Paper:** [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
 <!-- Replace XXXX.XXXXX with your arXiv ID once the submission is processed -->
 
-**MATLAB code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/ME944_simulation.m)
+**MATLAB code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/MATLAB_simulation.m)
 <!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
 
-**Python code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/ME944_simulation.py)
+**Python code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/Python_simulation.py)
 <!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
 
 
@@ -24,7 +24,7 @@ and compares it against the cascaded PI baseline.
 | --- | --- |
 | `FL_microgrid_tutorial` | Full tutorial paper. |
 | `MATLAB_simulation.m` | MATLAB simulation of both controllers under three scenarios. |
-| `Python_simulation.py` | Python equivalent script.. |
+| `Python_simulation.py` | Python equivalent script. |
 | `fig_scenario1_reference` | Figure 2 in the paper: reference tracking response ($v_{dq}$, $i_{dq}$, $P$, $Q$). |
 | `fig_scenario2_load` | Figure 3 in the paper: load step rejection response. |
 | `fig_scenario3_param` | Figure 4 in the paper: parameter mistune response. |
@@ -56,7 +56,7 @@ Requires R2020a or later (uses `exportgraphics`). Place
 `MATLAB_simulation.m` in your working directory and run
 
 ```matlab
-Python_simulation
+MATLAB_simulation
 ```
 
 ### Python
@@ -64,8 +64,9 @@ Python_simulation
 Requires Python 3.8 or later with `numpy` and `matplotlib`. From a shell:
 
 ```bash
-python ME944_simulation.py
+python Python_simulation.py
 ```
+
 
 ## Reproducing the paper figures
 
@@ -86,22 +87,22 @@ Once the arXiv preprint is live, use the following BibTeX entry
 
 ```bibtex
 @misc{EbunleAkupan2026_FL,
-  author       = {Ebunle Akupan, Rene},
-  title        = {Feedback Linearization and Control of a Grid-Forming
-                  Power Converter in an Islanded Microgrid},
-  year         = {2026},
-  eprint       = {XXXX.XXXXX},
+  author        = {Ebunle Akupan, Rene and Thein, May-Win},
+  title         = {Feedback Linearization and Control of a Grid-Forming
+                   Power Converter in an Islanded Microgrid},
+  year          = {2026},
+  eprint        = {XXXX.XXXXX},
   archivePrefix = {arXiv},
-  primaryClass = {eess.SY},
-  url          = {https://arxiv.org/abs/XXXX.XXXXX}
+  primaryClass  = {eess.SY},
+  url           = {https://arxiv.org/abs/XXXX.XXXXX}
 }
 ```
 
 Plain-text (IEEE style):
 
-> R. Ebunle Akupan, "Feedback Linearization and Control of a
-> Grid-Forming Power Converter in an Islanded Microgrid," arXiv preprint
-> arXiv:XXXX.XXXXX, 2026. [Online]. Available:
+> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization and Control
+> of a Grid-Forming Power Converter in an Islanded Microgrid," arXiv
+> preprint arXiv:XXXX.XXXXX, 2026. [Online]. Available:
 > https://arxiv.org/abs/XXXX.XXXXX
 
 ---
@@ -114,50 +115,22 @@ Zenodo record ID after you deposit the code):
 
 ```bibtex
 @software{EbunleAkupan2026_MATLAB,
-  author       = {Ebunle Akupan, Rene},
-  title        = {{Feedback Linearization of an Islanded Grid-Forming
-                  Inverter -- MATLAB Simulation}},
-  year         = {2026},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
-  version      = {1.0.0}
+  author    = {Ebunle Akupan, Rene and Thein, May-Win},
+  title     = {{Feedback Linearization of an Islanded Grid-Forming
+                Inverter -- MATLAB Simulation}},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.XXXXXXX},
+  url       = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  version   = {1.0.0}
 }
 ```
 
 Plain-text (IEEE style):
 
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization and Control of a
-> Grid-Forming Power Converter in an Islanded Microgrid," arXiv preprint
-> arXiv:XXXX.XXXXX, 2026. [Online]. Available:
-> https://arxiv.org/abs/XXXX.XXXXX
-
----
-
-### Citing the MATLAB code
-
-The MATLAB simulation is archived on Zenodo with a permanent DOI.
-Use the following BibTeX entry (replace `XXXXXXX` with the actual
-Zenodo record ID after you deposit the code):
-
-```bibtex
-@software{EbunleAkupan2026_MATLAB,
-  author       = {Ebunle Akupan, Rene and Thein, May-Win},
-  title        = {{Feedback Linearization of an Islanded Grid-Forming
-                  Inverter -- MATLAB Simulation}},
-  year         = {2026},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
-  version      = {1.0.0}
-}
-```
-
-Plain-text (IEEE style):
-
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an Islanded Grid-Forming
-> Inverter -- MATLAB Simulation," Zenodo, 2026, ver. 1.0.0.
-> doi: 10.5281/zenodo.XXXXXXX.
+> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
+> Islanded Grid-Forming Inverter -- MATLAB Simulation," Zenodo, 2026,
+> ver. 1.0.0. doi: 10.5281/zenodo.XXXXXXX.
 
 ---
 
@@ -168,22 +141,22 @@ DOI (replace `YYYYYYY` with the actual Zenodo record ID):
 
 ```bibtex
 @software{EbunleAkupan2026_Python,
-  author       = {Ebunle Akupan, Rene and Thein, May-Win},
-  title        = {{Feedback Linearization of an Islanded Grid-Forming
-                  Inverter -- Python Simulation}},
-  year         = {2026},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.YYYYYYY},
-  url          = {https://doi.org/10.5281/zenodo.YYYYYYY},
-  version      = {1.0.0}
+  author    = {Ebunle Akupan, Rene and Thein, May-Win},
+  title     = {{Feedback Linearization of an Islanded Grid-Forming
+                Inverter -- Python Simulation}},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.YYYYYYY},
+  url       = {https://doi.org/10.5281/zenodo.YYYYYYY},
+  version   = {1.0.0}
 }
 ```
 
 Plain-text (IEEE style):
 
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an Islanded Grid-Forming
-> Inverter -- Python Simulation," Zenodo, 2026, ver. 1.0.0.
-> doi: 10.5281/zenodo.YYYYYYY.
+> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
+> Islanded Grid-Forming Inverter -- Python Simulation," Zenodo, 2026,
+> ver. 1.0.0. doi: 10.5281/zenodo.YYYYYYY.
 
 ---
 
