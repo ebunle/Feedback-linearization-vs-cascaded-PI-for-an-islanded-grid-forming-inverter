@@ -84,7 +84,7 @@ Plain-text (IEEE style):
 
 ---
 
-### Citing the MATLAB code
+### Citing the code
 
 The MATLAB simulation is archived on Zenodo with a permanent DOI.
 Use the following BibTeX entry (replace `XXXXXXX` with the actual
