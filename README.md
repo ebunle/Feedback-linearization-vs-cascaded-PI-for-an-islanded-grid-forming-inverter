@@ -11,12 +11,7 @@ and compares it against the cascaded PI baseline.
 **Paper:** [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
 <!-- Replace XXXX.XXXXX with your arXiv ID once the submission is processed -->
 
-**MATLAB code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/MATLAB_simulation.m)
-<!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
-
-**Python code:** [GitHub](https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/Python_simulation.py)
-<!-- Replace YOUR-USERNAME/YOUR-REPO with your actual GitHub repository path -->
-
+**Codes:** [![DOI](https://zenodo.org/badge/1259954426.svg)](https://doi.org/10.5281/zenodo.20559223)
 
 ## Contents
 
@@ -120,8 +115,8 @@ Zenodo record ID after you deposit the code):
                 Inverter -- MATLAB Simulation}},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.20559223},
+  url       = {https://doi.org/10.5281/zenodo.20559223},
   version   = {1.0.0}
 }
 ```
@@ -129,56 +124,10 @@ Zenodo record ID after you deposit the code):
 Plain-text (IEEE style):
 
 > R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
-> Islanded Grid-Forming Inverter -- MATLAB Simulation," Zenodo, 2026,
-> ver. 1.0.0. doi: 10.5281/zenodo.XXXXXXX.
+> Islanded Grid-Forming Inverter -- MATLAB/PYTHON Simulation," Zenodo, 2026,
+> ver. 1.0.0. doi: 10.5281/zenodo.20559223.
 
 ---
-
-### Citing the Python code
-
-The Python simulation is archived on Zenodo with a separate permanent
-DOI (replace `YYYYYYY` with the actual Zenodo record ID):
-
-```bibtex
-@software{EbunleAkupan2026_Python,
-  author    = {Ebunle Akupan, Rene and Thein, May-Win},
-  title     = {{Feedback Linearization of an Islanded Grid-Forming
-                Inverter -- Python Simulation}},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.YYYYYYY},
-  url       = {https://doi.org/10.5281/zenodo.YYYYYYY},
-  version   = {1.0.0}
-}
-```
-
-Plain-text (IEEE style):
-
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
-> Islanded Grid-Forming Inverter -- Python Simulation," Zenodo, 2026,
-> ver. 1.0.0. doi: 10.5281/zenodo.YYYYYYY.
-
----
-
-### Getting a Zenodo DOI for the code
-
-If you have not yet deposited the code on Zenodo, the recommended
-workflow is:
-
-1. Go to [zenodo.org](https://zenodo.org) and log in with your GitHub
-   account.
-2. Under **GitHub** in your Zenodo settings, enable the repository
-   containing this code.
-3. Create a versioned release on GitHub (e.g., tag `v1.0.0`). Zenodo
-   will automatically archive it and issue a DOI.
-4. Copy the DOI from the Zenodo record page and replace the placeholder
-   `10.5281/zenodo.XXXXXXX` above.
-
-You can archive the MATLAB and Python scripts in the same repository
-and Zenodo record, or in separate records if you prefer separate DOIs
-for each. Either is acceptable; separate records make it easier for
-users to cite only the language they used.
-
 
 ## Reference
 
