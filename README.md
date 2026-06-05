@@ -6,8 +6,7 @@ in an Islanded Microgrid*.
 
 This package implements a full-state feedback-linearizing controller for the
 four-state islanded grid-forming inverter model in the synchronous dq frame,
-and compares it against the cascaded PI baseline of Guzman, Madrigal, and
-Melgoza-Vázquez (*Electricity*, 2025).
+and compares it against the cascaded PI baseline.
 
 
 ## Contents
