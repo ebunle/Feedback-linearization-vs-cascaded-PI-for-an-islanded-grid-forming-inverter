@@ -62,22 +62,8 @@ separately, as described below.
 Once the arXiv preprint is live, use the following BibTeX entry
 (replace `XXXX.XXXXX` with the actual arXiv ID):
 
-```bibtex
-@misc{EbunleAkupan2026_FL,
-  author        = {Ebunle Akupan, Rene and Thein, May-Win},
-  title         = {Feedback Linearization and Control of a Grid-Forming
-                   Power Converter in an Islanded Microgrid},
-  year          = {2026},
-  eprint        = {XXXX.XXXXX},
-  archivePrefix = {arXiv},
-  primaryClass  = {eess.SY},
-  url           = {https://arxiv.org/abs/XXXX.XXXXX}
-}
-```
 
-Plain-text (IEEE style):
-
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization and Control
+> R. Ebunle Akupan, M.-W. Thein, and S.Y. Yoon, "Feedback Linearization and Control
 > of a Grid-Forming Power Converter in an Islanded Microgrid," arXiv
 > preprint arXiv:XXXX.XXXXX, 2026. [Online]. Available:
 > https://arxiv.org/abs/XXXX.XXXXX
@@ -86,22 +72,11 @@ Plain-text (IEEE style):
 
 ### Citing the code
 
-```bibtex
-@software{EbunleAkupan2026_software,
-  author    = {Ebunle Akupan, Rene and Thein, May-Win},
-  title     = {{Feedback Linearization of an Islanded Grid-Forming
-                Inverter -- MATLAB/PYTHON Simulation}},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20559223},
-  url       = {https://doi.org/10.5281/zenodo.20559223},
-  version   = {1.0.0}
-}
-```
+
 
 OR:
 
-> R. Ebunle Akupan and M.-W. Thein, "Feedback Linearization of an
+> R. Ebunle Akupan, M.-W. Thein, and S.Y. Yoon, "Feedback Linearization of an
 > Islanded Grid-Forming Inverter -- MATLAB/PYTHON Simulation," Zenodo, 2026,
 > ver. 1.0.0. doi: 10.5281/zenodo.20559223.
 
